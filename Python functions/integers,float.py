@@ -27,3 +27,24 @@ print(abs(-3.5))
 print(abs(-6))
 #round to the number of digits
 print(round(5.05956969, 3))
+##Comparison operators
+#Equal
+num_1 = 4
+num_2 = 6
+print(num_1 == num_2) 
+#Not equal
+print(num_1 != num_2)
+#Greater than/Greater than or equal to
+print(num_1 >= num_2)
+print(num_1 > num_2)
+#Less than/Less than or equal to
+print(num_1 <= num_2)
+print(num_1 < num_2)
+#assignment operators with strings
+num1 = '25'
+num2 = '38'
+print(num1 + num2)
+num1 = int(num1)
+num2 = int(num2)
+print(num1 + num2)
+
