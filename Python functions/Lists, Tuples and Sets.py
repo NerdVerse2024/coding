@@ -45,3 +45,34 @@ for item in courses:
 for index,coursename in enumerate(courses):
     print(index, coursename)
 
+courses_str = ', '.join(courses)
+print(courses)
+course_splt = courses_str.split(' - ')
+print(courses_str)
+print(course_splt)
+
+
+##Tuples [The immutable ones]
+BIOINFO_TOOLS_TUPLES1 = ('BLAST', 'GPROFILER', 'TRIMMOMATICS', 'FEATURECOUNTS')
+BIOINFO_TOOLS_TUPLES2 = BIOINFO_TOOLS_TUPLES1
+print(BIOINFO_TOOLS_TUPLES1)
+print(BIOINFO_TOOLS_TUPLES2)
+#BIOINFO_TOOLS_TUPLES1[0] = 'BLASTX' {CAN'T DO THAT, RUNNING THIS WILL THROW AN ERROR}
+
+## Sets 
+bioinfo_database_sets = {'UCSC', 'RNACENTRAL', 'NCBI', 'PDB', 'UCSC'} #IT THROWS AWAY DUPLICATES
+bioinfo_ncrna_sets = {'GEO', 'NCBI', 'RNACENTRAL', 'NONCODE'}
+print(bioinfo_database_sets)
+print('PDB' in bioinfo_database_sets)
+print(bioinfo_database_sets.intersection(bioinfo_ncrna_sets))
+print(bioinfo_database_sets.difference(bioinfo_ncrna_sets))
+print(bioinfo_database_sets.union(bioinfo_ncrna_sets))
+
+##Creating empty lists, tuples and sets 
+empty_list = []
+empty_list2 = list()
+
+tuple_empty = ()
+tuple_empty2 = tuple()
+
+empty_set = set()
